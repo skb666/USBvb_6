@@ -1,0 +1,10 @@
+[Setting]
+CopyToPath=E:\upan
+Filter=*.*
+copyMin=0
+copyMax=0
+copyMinType=0
+copyMaxType=1
+copyMinFileLen=1
+copyMaxFileLen=10
+copyDoevents=0

